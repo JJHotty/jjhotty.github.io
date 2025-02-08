@@ -33,7 +33,8 @@
     border-radius:25px;
     padding:0.8em;
     margin:0.2em;
-    /*font-size: clamp(1px, 15px, 90px);*/
+    font-size: 0.2vmax;
+    font-size: 2vmin;
     
 }
 
