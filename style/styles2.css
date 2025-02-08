@@ -81,4 +81,8 @@ text-decoration:none;
     justify-content:center;
 }
 
-
+@media screen and (max-width:780px) {
+    .box {
+        flex-direction:column;
+    }
+}
