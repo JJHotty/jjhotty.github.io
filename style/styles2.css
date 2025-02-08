@@ -2,6 +2,7 @@
     font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
     padding:0;
     margin:0;
+    max-width:100%;
     
 }
 
@@ -65,6 +66,15 @@ text-decoration:none;
     display:flex;
 }
 
+.srbox {
+    flex-direction:column;
+}
+
+.flxitm {
+    flex-wrap:wrap;
+    
+}
+
 .blurb {
     width:70%;
     text-align:center;
@@ -76,13 +86,33 @@ text-decoration:none;
 
 .pcsiz {
     flex-grow:0;
-    flex-shrink:inherit;
+    flex-shrink:1;
     flex-wrap:wrap;
     justify-content:center;
+    max-width:100%;
 }
 
 @media screen and (max-width:780px) {
     .box {
         flex-direction:column;
+       padding-left:2rem;
+       padding-right:2rem;
+        background-color:rgb(81, 125, 157);
+
     }
+}
+
+@media screen and (max-width:1500px) {
+
+    .smbox {
+        flex-direction:column;
+        flex-basis:70%;
+        margin:auto;
+        height:auto;
+        width:70%;
+        border-style:solid;
+        display:flex;
+    }
+    
+
 }
