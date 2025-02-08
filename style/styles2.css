@@ -1,0 +1,78 @@
+* {
+    font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
+    padding:0;
+    margin:0;
+    
+}
+
+.box {
+    display:flex; /* box is for the heading and links */
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    background-color:rgba(255, 213, 0, 0.409);
+}
+
+.box2 {
+    display:flex; /*  box 2 is for the main field  */
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    background-color:rgba(255, 213, 0, 0.257);
+}
+
+
+
+.headermenu { /* headermenu acts as a box */
+    flex:auto;
+}
+
+.titmenu { /* titmenu is all atrributes for the links */
+    flex-basis:auto;
+    list-style-type:none;
+    color:black;
+    border-style:outset;
+    border-radius:25px;
+    padding:0.8em;
+    margin:0.2em;
+    /*font-size: clamp(1px, 15px, 90px);*/
+    
+}
+
+.titmenu:hover {
+    background-color:rgb(230, 164, 23);
+    color:white;
+}
+
+.lnk {
+text-decoration:none;
+}
+
+.title {
+    text-align:center;
+    background-color:rgba(226, 195, 42, 0.839);
+}
+
+.vw {
+    
+    justify-content:center;
+    width:75%;
+    border-style:dotted;
+}
+
+.smbox {
+    flex-basis:70%;
+    margin:auto;
+    height:300px;
+    width:70%;
+    border-style:solid;
+
+}
+
+.blurb {
+    width:70%;
+    text-align:center;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
