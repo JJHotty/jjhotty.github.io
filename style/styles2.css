@@ -16,7 +16,7 @@
 .box2 {
     display:flex; /*  box 2 is for the main field  */
     justify-content:space-evenly;
-    background-color:rgb(227, 227, 227);
+    background-color:rgb(255, 255, 255);
 }
 
 .headermenu { /* headermenu acts as a box */
@@ -34,30 +34,30 @@
     font-size:clamp(1rem, 1vw, 1.8rem);
 }
 
-.titmenu:hover {
+.titmenu:hover { /* title menu:hover is the color change effect when the mouse hovers over buttons */
     background-color:rgb(230, 164, 23);
     color:white;
     animation-delay:1.4s;
 }
 
-.lnk {
+.lnk { /* This removes the underline of the links */
 text-decoration:none;
 }
 
-.title {
+.title { /* This is the h1 title at the top of the page */
     text-align:center;
     background-color:rgba(81, 125, 157, 0.839);
     font-size:clamp(2.2rem, 3vw, 5rem);
 }
 
-.vw {
-    
+.vw { /* View Width- This is a flexbox parent and originally had a border which has now been set to none */
     justify-content:center;
     width:75%;
     border-style:dotted;
+    border-color:rgb(157, 157, 157)
 }
 
-.smbox {
+.smbox { /* Small box- This is the black grid on the screen with set height and width */
     flex-basis:70%;
     margin:auto;
     height:300px;
@@ -66,16 +66,15 @@ text-decoration:none;
     display:flex;
 }
 
-.srbox {
+.srbox { /* smaller box- This keeps the Title and the Paragraph in a column rather than row */
     flex-direction:column;
 }
 
-.flxitm {
-    flex-wrap:wrap;
-    
+ .flxitm { /* flex item- this declares an item as a flexchild and redeclares wrap is on */
+    flex-wrap:wrap;   
 }
 
-.blurb {
+.blurb { /* This relates to the blurb at the top of the page */
     width:70%;
     text-align:center;
     margin:auto;
@@ -84,7 +83,7 @@ text-decoration:none;
     font-size:clamp(1.2rem, 1.5vw, 2rem);
 }
 
-.pcsiz {
+.pcsiz { /* picture size - this keeps all the images on the page dynamiclly sized and similar. */
     flex-grow:0;
     flex-shrink:1;
     flex-wrap:wrap;
@@ -92,7 +91,7 @@ text-decoration:none;
     max-width:100%;
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:780px) { /* This Media Query moves the menu down into a column when teh screen gets to a certain size. */
     .box {
         flex-direction:column;
        padding-left:2rem;
@@ -102,7 +101,7 @@ text-decoration:none;
     }
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1500px) { /*This media query restructures the grid to fit on smaller screens */
 
     .smbox {
         flex-direction:column;
