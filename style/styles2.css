@@ -16,7 +16,7 @@
 .box2 {
     display:flex; /*  box 2 is for the main field  */
     justify-content:space-evenly;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(242, 240, 240);
 }
 
 .headermenu { /* headermenu acts as a box */
@@ -36,7 +36,7 @@
 
 .titmenu:hover { /* title menu:hover is the color change effect when the mouse hovers over buttons */
     background-color:rgb(230, 164, 23);
-    color:white;
+    color:rgb(0, 0, 0);
     animation-delay:1.4s;
 }
 
@@ -64,14 +64,18 @@ text-decoration:none;
     width:70%;
     border-style:solid;
     display:flex;
+    background-color:rgba(149, 183, 224, 0.383);
+    color:rgb(35, 35, 35);
 }
 
 .srbox { /* smaller box- This keeps the Title and the Paragraph in a column rather than row */
     flex-direction:column;
+    
 }
 
  .flxitm { /* flex item- this declares an item as a flexchild and redeclares wrap is on */
     flex-wrap:wrap;   
+    margin-left:1rem;
 }
 
 .blurb { /* This relates to the blurb at the top of the page */
@@ -81,6 +85,8 @@ text-decoration:none;
     padding-top:20px;
     padding-bottom:20px;
     font-size:clamp(1.2rem, 1.5vw, 2rem);
+    color:white;
+    background-color:rgba(34, 127, 185, 0.602);
 }
 
 .pcsiz { /* picture size - this keeps all the images on the page dynamiclly sized and similar. */
@@ -111,6 +117,9 @@ text-decoration:none;
         width:70%;
         border-style:solid;
         display:flex;
+    }
+    .flxitm {
+        margin-left:0;
     }
     
 
