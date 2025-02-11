@@ -55,7 +55,7 @@ text-decoration:none;
 }
 
 .dates {
-    font-size:2em;
+    font-size:clamp(1.2rem, 3vw, 2rem);
     color:black;
 }
 
@@ -102,7 +102,7 @@ text-decoration:none;
  .flxitm { /* flex item- this declares an item as a flexchild and redeclares wrap is on */
     flex-wrap:wrap;   
     margin-left:1rem;
-    font-size:clamp(1.5rem , 1.5vw , 2.5rem);
+    font-size:clamp(1.5rem , 1vw , 2rem);
 }
 
 .flxitmnw { /* flex item no wrap- this declares an item as a flexchild and redeclares wrap is off */
@@ -110,7 +110,7 @@ text-decoration:none;
     margin-left:1rem;
     max-width:100%;
     font-size:clamp(1.5rem , 1.5vw , 2.5rem);
-    
+
 }
 
 .blurb { /* This relates to the blurb at the top of the page */
