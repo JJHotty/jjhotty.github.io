@@ -55,11 +55,11 @@ text-decoration:none;
 }
 
 .dates {
-    font-size:clamp(1.2rem, 3vw, 2rem);
+    font-size:clamp(1.2rem, 3vw, 2rem); /*This sets the size and color of the dates in blog menus*/
     color:black;
 }
 
-.dates:hover {
+.dates:hover { /*This sets the color of the dates in blog menus on hover*/
     color:Orange;
 }
 
@@ -132,7 +132,7 @@ text-decoration:none;
     max-width:100%;
 }
 
-.left {
+.left { /*This is a flexbox child that sets the position of an element to the farthest left*/
     flex-basis:auto;
     align-self:flex-start;
 }
@@ -193,7 +193,7 @@ text-decoration:none;
 
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1500px) { /*This was an experiment to use min-width instead of max-width. depricated*/
 
     
 
