@@ -3,15 +3,14 @@ font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
 padding:0;
 margin:0;
 max-width:100%;
+
 }
 
 .header {
     display:flex;
     max-width:100%;
     background-color:rgb(74, 115, 77);
-    /*margin-bottom:2em;*/
-    padding: 1em 0 1em 1em;
-    box-shadow: 500px, 500px, 12px;
+    padding: 1em 1em 0em 1em;
     border-bottom:1em;
     border-color:black;
 }
@@ -20,8 +19,7 @@ max-width:100%;
     display:flex;
     max-width:100%;
     background-color:rgb(74, 115, 77);
-    /*margin-bottom:2em;*/
-    padding: 1em 0 1em 1em;
+    padding: 1em 1em 1em 1em;
     box-shadow: 500px, 500px, 12px;
     border-bottom:1em;
     border-color:black;
@@ -31,22 +29,23 @@ max-width:100%;
 .pfp {
     flex-basis:auto;
     border-radius:50%;
-    width:clamp(10em, 15%, 18em);
+    width:clamp(4em, 15%, 7em);
     
     
 }
 
 .toph {
     flex-basis:auto;
-    font-size:clamp(2em, 6vw, 5em);
+    font-size:clamp(2em, 6vw, 3em);
     align-content:center;
     margin-left:0.5em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:auto;
     
 }
 .mnubox {
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
 
     
 }
@@ -61,7 +60,7 @@ max-width:100%;
     border-color:black;
     margin-left:1em;
     background-color:rgba(0, 93, 8, 0.377);
-    font-size:clamp(1em, 2vw, 2em);
+    font-size:clamp(1em, 2vw, 1.5em);
     margin-top:auto;
     margin-bottom:auto;
     border-radius:clamp(1em, 2vw, 2em);
@@ -79,10 +78,10 @@ max-width:100%;
     border-color:black;
     margin-left:1em;
     background-color:rgba(0, 93, 8, 0.377);
-    font-size:clamp(1em, 2vw, 2em);
+    font-size:clamp(1em, 2vw, 1.5em);
     margin-top:auto;
     margin-bottom:auto;
-    border-radius:clamp(1em, 2vw, 2em);
+    border-radius:clamp(1em, 2vw, 1.5em);
     padding:0.5em 1em 0.5em 1em;
 }
 
@@ -94,23 +93,68 @@ max-width:100%;
     background-color:rgb(40, 108, 139);
 }
 
-@media (min-width:2450px) {
+.lineblck {
+    border:0.5em solid black;
+}
+
+.lineblu {
+    border:0.5em solid rgb(40, 108, 139);
+}
+
+.bdybox {
+    display:flex;
+    justify-content:center;
+}
+
+.flxitm {
+    flex-basis:80vw;
+    background-color:white;
+    min-height:20vh;
+    border:0.3em solid black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1600px) {
 
     .header2 {
         display:none;
     }
 
-    
-
 }
-@media (max-width:2450px) {
+@media (max-width:1600px) {
 
     .lnk {
         display:none;
     }
+
+    .mnubox {
+        margin:auto;
+    } 
+
+    .toph {
+        padding-left:3em;
+    }
+
+    .pfp {
+        width:clamp(4em, 15%, 7em);
+    }
+
+    .header {
+        padding-top:0.2em;
+    }
 }
 
-@media (max-width:700px) {
+@media (max-width:730px) {
    .header {
     flex-direction:column;
 
@@ -122,6 +166,7 @@ max-width:100%;
 
    .toph {
     margin:auto;
+    padding:0;
    }
    
     .mnubox {
@@ -139,14 +184,15 @@ max-width:100%;
 @media (max-width:320px) {
 
     .pfp {
-        width:clamp(8em, 15%, 12em);
+        width:clamp(4em, 15%, 7em);
         margin-right:auto;
         margin-left:0;
     }
 
 .toph {
     margin-left:0;
-    font-size:clamp(1em, 2vw, 3em);
+    font-size:clamp(2em, 6vw, 3em);
+    padding:0;
 }
 
 .lnk2 {
