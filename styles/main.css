@@ -1,0 +1,156 @@
+* {
+font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
+padding:0;
+margin:0;
+max-width:100%;
+}
+
+.header {
+    display:flex;
+    max-width:100%;
+    background-color:rgb(74, 115, 77);
+    /*margin-bottom:2em;*/
+    padding: 1em 0 1em 1em;
+    box-shadow: 500px, 500px, 12px;
+    border-bottom:1em;
+    border-color:black;
+}
+
+.header2 {
+    display:flex;
+    max-width:100%;
+    background-color:rgb(74, 115, 77);
+    /*margin-bottom:2em;*/
+    padding: 1em 0 1em 1em;
+    box-shadow: 500px, 500px, 12px;
+    border-bottom:1em;
+    border-color:black;
+}
+
+
+.pfp {
+    flex-basis:auto;
+    border-radius:50%;
+    width:clamp(10em, 15%, 18em);
+    
+    
+}
+
+.toph {
+    flex-basis:auto;
+    font-size:clamp(2em, 6vw, 5em);
+    align-content:center;
+    margin-left:0.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.mnubox {
+    display:flex;
+    justify-content:space-around;
+
+    
+}
+
+.lnk {
+    text-decoration:none;
+    flex-basis:auto;
+    flex-direction:row-reverse;
+    color:black;
+    border-style:inset;
+    border:0.1em solid;
+    border-color:black;
+    margin-left:1em;
+    background-color:rgba(0, 93, 8, 0.377);
+    font-size:clamp(1em, 2vw, 2em);
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius:clamp(1em, 2vw, 2em);
+    padding:0.5em 1em 0.5em 1em;
+
+}
+
+.lnk2 {
+    text-decoration:none;
+    flex-basis:auto;
+    flex-direction:row-reverse;
+    color:black;
+    border-style:inset;
+    border:0.1em solid;
+    border-color:black;
+    margin-left:1em;
+    background-color:rgba(0, 93, 8, 0.377);
+    font-size:clamp(1em, 2vw, 2em);
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius:clamp(1em, 2vw, 2em);
+    padding:0.5em 1em 0.5em 1em;
+}
+
+.lnk2:hover {
+    background-color:rgb(40, 108, 139);
+}
+
+.lnk:hover {
+    background-color:rgb(40, 108, 139);
+}
+
+@media (min-width:2450px) {
+
+    .header2 {
+        display:none;
+    }
+
+    
+
+}
+@media (max-width:2450px) {
+
+    .lnk {
+        display:none;
+    }
+}
+
+@media (max-width:700px) {
+   .header {
+    flex-direction:column;
+
+   }
+
+   .pfp {
+    margin:auto;
+   }
+
+   .toph {
+    margin:auto;
+   }
+   
+    .mnubox {
+        flex-direction:column;
+        margin:auto;
+        
+    }
+
+    .lnk2 {
+        margin-bottom:0.5em;
+        
+    }
+}
+
+@media (max-width:320px) {
+
+    .pfp {
+        width:clamp(8em, 15%, 12em);
+        margin-right:auto;
+        margin-left:0;
+    }
+
+.toph {
+    margin-left:0;
+    font-size:clamp(1em, 2vw, 3em);
+}
+
+.lnk2 {
+    margin-left:0;
+}
+
+}
