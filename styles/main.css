@@ -1,215 +1,246 @@
 * {
-font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
-padding:0;
-margin:0;
-max-width:100%;
-}
-
-.pfp { /* Profile Picture within top heading */
-    flex-basis:auto;
-    border-radius:50%;
-    width:clamp(4em, 15%, 7em);   
-    margin-bottom:0.5em;
-}
-
-body { /* Background color for entire body element */
-    background-color:rgb(208, 208, 208);
-}
-
-.header { /* Header Element at top of page -- This is larger screens */
-    display:flex;
-    max-width:100%;
-    background-color:rgb(74, 115, 77);
-    padding: 1em 1em 0em 1em;
-    border-bottom:1em;
-    border-color:black;
-}
-
-.header2 { /* Header element at top of page -- This is for smaller screens */
-    display:flex;
-    max-width:100%;
-    background-color:rgb(8, 13, 8);
-    padding: 1em 1em 1em 1em;
-    box-shadow: 500px, 500px, 12px;
-    border-bottom:1em;
-    border-color:black;
-}
-
-.toph {     /* This is top heading. JJHotty.Github.io */
-    flex-basis:auto;
-    font-size:clamp(2em, 6vw, 3em);
-    align-content:center;
-    margin-left:0.5em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:auto;
-    color:white;
-    background-color:rgba(0, 0, 0, 0.619);
-}
-
-.mnubox {       /* This is menubox. It's the parent to all the link items */
-    display:flex;
-    justify-content:space-evenly;
-}
-
-.lnk {      /* This is the link items on bigger sized screens */
-    text-decoration:none;
-    flex-basis:auto;
-    flex-direction:row-reverse;
-    color:black;
-    border-style:inset;
-    border:0.1em solid;
-    border-color:black;
-    margin-left:1em;
-    background-color:rgb(1, 177, 16);
-    font-size:clamp(1em, 2vw, 1.5em);
-    margin-top:auto;
-    margin-bottom:auto;
-    border-radius:clamp(1em, 2vw, 2em);
-    padding:0.5em 1em 0.5em 1em;
-}
-
-.lnk2 {  /* This is the link items on smaller screens */
-    text-decoration:none;
-    flex-basis:auto;
-    flex-direction:row-reverse;
-    color:black;
-    border-style:inset;
-    border:0.1em solid;
-    border-color:black;
-    margin-left:1em;
-    background-color:rgba(1, 177, 16);
-    font-size:clamp(1em, 2vw, 1.5em);
-    margin-top:auto;
-    margin-bottom:auto;
-    border-radius:clamp(1em, 2vw, 1.5em);
-    padding:0.5em 1em 0.5em 1em;
-}
-
-.lnk2:hover { /* Change color of menu buttons on hover */
-    background-color:rgb(40, 108, 139);
-}
-
-.lnk:hover {    /* Change color of menu buttons on hover */
-    background-color:rgb(40, 108, 139);
-}
-
-.lineblck {     /* Line Black- This is for a line that has now been removed that sits under the heading */
-    border:0.5em solid black;
-}
-
-.lineblu {  /* Line Blue- THis is for the blue line that sits under the header.  */
-    border:0.5em solid rgb(40, 108, 139);
-}
-
-.bdybox {   /* This is the body box parent */
-    display:flex;
-    justify-content:center;
-}
-
-.flxitm {   /* This is the grid item- Used for blog and blurb content */
-    flex-basis:80vw;
-    background-color:white;
-    min-height:20vh;
-    border:0.3em solid black;
-}
-
-.grad { /* This was setup as a gradient, till I decided that stars would look better. This is the picture on the header */
-    background-image: url("/pics/Untitled\ design.png");
-    max-width:100%;
-}
-
-.feet { /* This is the footer */
-    display:flex;    
-    justify-content:flex-end;
-    width:100vw;
-}
-
-.flxbx { /* This is a box. Flex parent */
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-}
-
-.flxitm2 { /* This is a flex child.  */
-    background-color:white;
-    max-height:5vh;
-    border:0.1em solid black;
-    flex-grow:1;
-}
-
-.flxgro { /* This is to see if I could get the footer at the bottom of the page. */ 
-    background-color:red;
-}
-
-
-@media (min-width:1600px) { /* This is the only min-width and hides the second menu until screen size changes */
-    .header2 {
-        display:none;
-    }
-}
-
-@media (max-width:1600px) { /* This hides the first menu and resizes and moves all elements on the Header */
-    .lnk {
-        display:none;
-    }
-
-    .mnubox {
-        margin:auto;
-    } 
-
-    .toph {
-        margin-left:3em;
-    }
-
-    .pfp {
-        width:clamp(4em, 15%, 7em);
-    }
-
-    .header {
-        padding-top:0.2em;
-    }
-}
-
-@media (max-width:730px) {  /* This is another media query. It adjusts the menu to column rather than row.  */
-   .header {
-    flex-direction:column;
-   }
-
-   .pfp {
-    margin:auto;
-   }
-
-   .toph {
-    margin:auto;
+    font-family:'Courier New', Courier, monospace; /* This is to clear defaults */
     padding:0;
-   }
-   
-    .mnubox {
-        flex-direction:column;
-        margin:auto;
+    margin:0;
+    max-width:100%;
     }
-
-    .lnk2 {
+    
+    .pfp { /* Profile Picture within top heading */
+        flex-basis:auto;
+        border-radius:50%;
+        width:clamp(4em, 15%, 7em);   
         margin-bottom:0.5em;
     }
-}
-
-@media (max-width:320px) { /* This is the last media query and shifts everything into its smallest possible state before everything breaks*/
-
-    .pfp {
-        width:clamp(4em, 15%, 7em);
-        margin-right:auto;
-        margin-left:0;
+    
+    body { /* Background color for entire body element */
+        background-color:rgb(208, 208, 208);
+    }
+    
+    .header { /* Header Element at top of page -- This is larger screens */
+        display:flex;
+        max-width:100%;
+        background-color:rgb(74, 115, 77);
+        padding: 1em 1em 0em 1em;
+        border-bottom:1em;
+        border-color:black;
+    }
+    
+    .header2 { /* Header element at top of page -- This is for smaller screens */
+        display:flex;
+        max-width:100%;
+        background-color:rgb(8, 13, 8);
+        padding: 1em 1em 1em 1em;
+        box-shadow: 500px, 500px, 12px;
+        border-bottom:1em;
+        border-color:black;
+    }
+    
+    .toph {     /* This is top heading. JJHotty.Github.io */
+        flex-basis:auto;
+        font-size:clamp(2em, 6vw, 3em);
+        align-content:center;
+        margin-left:0.5em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin:auto;
+        color:white;
+        background-color:rgba(0, 0, 0, 0.619);
+    }
+    
+    .mnubox {       /* This is menubox. It's the parent to all the link items */
+        display:flex;
+        justify-content:space-evenly;
+    }
+    
+    .lnk {      /* This is the link items on bigger sized screens */
+        text-decoration:none;
+        flex-basis:auto;
+        flex-direction:row-reverse;
+        color:black;
+        border-style:inset;
+        border:0.1em solid;
+        border-color:black;
+        margin-left:1em;
+        background-color:rgb(1, 177, 16);
+        font-size:clamp(1em, 2vw, 1.5em);
+        margin-top:auto;
+        margin-bottom:auto;
+        border-radius:clamp(1em, 2vw, 2em);
+        padding:0.5em 1em 0.5em 1em;
+    }
+    
+    .lnk2 {  /* This is the link items on smaller screens */
+        text-decoration:none;
+        flex-basis:auto;
+        flex-direction:row-reverse;
+        color:black;
+        border-style:inset;
+        border:0.1em solid;
+        border-color:black;
+        margin-left:1em;
+        background-color:rgba(1, 177, 16);
+        font-size:clamp(1em, 2vw, 1.5em);
+        margin-top:auto;
+        margin-bottom:auto;
+        border-radius:clamp(1em, 2vw, 1.5em);
+        padding:0.5em 1em 0.5em 1em;
+    }
+    
+    .lnk2:hover { /* Change color of menu buttons on hover */
+        background-color:rgb(40, 108, 139);
+    }
+    
+    .lnk:hover {    /* Change color of menu buttons on hover */
+        background-color:rgb(40, 108, 139);
+    }
+    
+    .lineblu {  /* Line Blue- THis is for the blue line that sits under the header.  */
+        border:0.5em solid rgb(40, 108, 139);
+    }
+    
+    .bdybox {   /* This is the body box parent */
+        display:flex;
+        justify-content:center;
+        margin-top:2rem;
+    }
+    
+    .flxitm {   /* This is the grid item- Used for blog and blurb content */
+        flex-basis:50vw;
+        background-color:white;
+        min-height:20vh;
+        border:0.3em solid black;
+        padding:2em;
+    }
+    
+    .grad { /* This was setup as a gradient, till I decided that stars would look better. This is the picture on the header */
+        background-image: url("/pics/Untitled\ design.png");
+        max-width:100%;
+    }
+    
+    .feet { /* This is the footer */
+        display:flex;    
+        justify-content:flex-end;
+        width:100vw;
+    }
+    
+    .flxbx { /* This is a box. Flex parent */
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+    }
+    
+    .flxitm2 { /* This is a flex child.  */
+        background-color:white;
+        max-height:5vh;
+        border:0.1em solid black;
+        flex-grow:1;
     }
 
-.toph {
-    margin-left:0;
-    font-size:clamp(2em, 6vw, 3em);
-    padding:0;
-}
+    .blurbh {
+        font-size:clamp(2em, 2vw, 4em);
 
-.lnk2 {
-    margin-left:0;
-}
+    }
 
-}
+    .blurbp {
+        font-size:clamp(1em, 2vw, 1.7em);
+    }
+
+    .recentposts {
+        float:left;
+        border:3px solid black;
+        min-height:30em;
+        margin-top:2em;
+        margin-left:1px;
+    }
+
+    .recentplnk {
+        list-style-type:none;
+        padding:1em;
+        color:blue;
+
+    }
+
+    .recentplnk a {
+        text-decoration:none;
+        color:black;
+
+        
+    }
+    
+    
+    @media (min-width:1600px) { /* This is the only min-width and hides the second menu until screen size changes */
+        .header2 {
+            display:none;
+        }
+    }
+    
+    @media (max-width:1600px) { /* This hides the first menu and resizes and moves all elements on the Header */
+        .lnk {
+            display:none;
+        }
+    
+        .mnubox {
+            margin:auto;
+        } 
+    
+        .toph {
+            margin-left:3em;
+        }
+    
+        .pfp {
+            width:clamp(4em, 15%, 7em);
+        }
+    
+        .header {
+            padding-top:0.2em;
+        }
+    }
+    
+    @media (max-width:730px) {  /* This is another media query. It adjusts the menu to column rather than row.  */
+       .header {
+        flex-direction:column;
+       }
+    
+       .pfp {
+        margin:auto;
+       }
+    
+       .toph {
+        margin:auto;
+        padding:0;
+       }
+       
+        .mnubox {
+            flex-direction:column;
+            margin:auto;
+        }
+    
+        .lnk2 {
+            margin-bottom:0.5em;
+        }
+
+        .recentposts {
+            float:none;
+            max-width:50vw;
+            margin:auto;
+        }
+    }
+    
+    @media (max-width:320px) { /* This is the last media query and shifts everything into its smallest possible state before everything breaks*/
+    
+        .pfp {
+            width:clamp(4em, 15%, 7em);
+            margin-right:auto;
+            margin-left:0;
+        }
+    
+    .toph {
+        margin-left:0;
+        font-size:clamp(2em, 6vw, 3em);
+        padding:0;
+    }
+    
+    .lnk2 {
+        margin-left:0;
+    }
+    
+    }
