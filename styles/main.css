@@ -113,6 +113,27 @@
         padding:2em;
         border-radius:2%;
     }
+
+    .flxitm2 {
+        display:flex;
+        flex-direction:row;
+        max-width:80%;
+        flex-grow:1;
+        margin-left:auto;
+        margin-right:auto;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+    }
+
+    .flxitms {
+        margin: 0.5em 0.5em 0.5em 0.5em;
+        min-width:19em;
+        background-color:white;
+        min-height:19em;
+        border:0.3em solid rgba(44, 155, 0, 0.522);
+        padding:2em;
+        border-radius:2%;
+    }
     
     .grad { /* This was setup as a gradient, till I decided that stars would look better. This is the picture on the header */
         background-image: url("/pics/Untitled\ design.png");
@@ -131,7 +152,7 @@
         align-items:stretch;
     }
     
-    .flxitm2 { /* This is a flex child.  */
+    .flxitm3 { /* This is a flex child.  */
         background-color:white;
         max-height:5vh;
         border:0.1em solid black;
