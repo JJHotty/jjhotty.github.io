@@ -145,7 +145,7 @@
     }
 
     .blurbp {
-        font-size:clamp(1em, 2vw, 1.7em);
+        font-size:clamp(1em, 2vw, 1.3em);
     }
 
     .recentposts {

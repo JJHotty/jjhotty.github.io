@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Karengo 2025</title>
+
+        <script>
+            document.getElementById("pfpic").style.display = "none";
+
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("pfpic").style.display = "block";
+            });
+        </script>
+
+    </head>
+    <body>
+        <div class="header grad"> <!--This is a the main heading/menu space at the top of the page-->
+       <img id="pfpic" class="pfp" src="./pics/profile.png"/> <!--This is profile picture top left-->
+       <h3 class="toph">JJHotty.Github.io</h3> <!--Heading in main/menu-->
+       <ul class="mnubox"> <!--flexbox parent to menu items / links-->
+            <a class="lnk" href="/index.html">Menu</a>
+            <a class="lnk" href="./blog/tb.html">Tech Skills Blog</a>
+            <a class="lnk" href="./blog/hsb.html">Human Skills Blog</a>
+            <a class="lnk" href="./blog/pb.html">Personal Blog</a>
+        </ul>
+    </div>
+    <div class="header2"> <!--This is a header copy that appears when the screen matches media query-->
+        <ul class="mnubox">
+            <a class="lnk2" href="/index.html">Menu</a>
+            <a class="lnk2" href="./blog/tb.html">Tech Skills Blog</a>
+            <a class="lnk2" href="./blog/hsb.html">Human Skills Blog</a>
+            <a class="lnk2" href="./blog/pb.html">Personal Blog</a>
+        </ul>
+    </div>
+    <div class="lineblu">
+<!--Leave this line here-->
+    </div>
+    <div class="recentposts flxbx">
+        <h1>Recent Posts..</h1>
+        <ul class="recentpbx">
+            <li class="recentplnk">PB <a href="../pb/010225.html">The Habit <br> 01/02/25</a></li>
+            <li class="recentplnk">PB <a href="../pb/040225.html">A Real Ruckus <br> 04/02/25</a></li>
+            <li class="recentplnk">TB <a href="../tb/050225.html">Developer Brain Prep <br> 05/02/25</a></li>
+            <li class="recentplnk">TB <a href="../tb/060225.html">Understanding Github <br> 06/02/25</a></li>
+            <li class="recentplnk">TB <a href="../tb/070225.html">Journaling <br> 07/02/25</a></li>
+            <li class="recentplnk">TB <a href="../tb/080225.html">Oops. I finished? <br> 08/02/25</a></li>
+            <li class="recentplnk">TB <a href="../tb/110225.html">Flexbox and Media-Queries <br> 11/02/25</a></li>
+            <li class="recentplnk">PB <a href="../pb/160225.html">A Summary <br> 16/02/25</a></li>
+        </ul>
+        </ul>
+    </div>
+
+    <div class="bdybox">
+        <div class="flxitm">
+            <h1 class="blurbh">Flexbox and Media-Queries...</h1>
+                <p class="blurbp">
+                    <b>T</b>he past few days have been hectic for me personally, but I have had the opportunity to put a bunch of hours into the github.io website. <br>
+                    <br><b>I</b>t has taken a little while to get the hang of using flexbox, media queries, and my new favourite thing in CSS "Clamp". The addition of media queries and clamps into my code has made my entire page completely dynamic and allowed me to specify the size of the text for all the viewing sizes, as well as how the layout of the page will shift as the screen shifts in size.<br>
+                    <br><b>T</b>here are a number of things that I have learned.. But here is a quick summary of the major points I'd make. <br>
+                    <b>F</b>lexbox can be nested.. It took me a little while to understand the basic principles of how flexbox works. And a lot of the issues I had with it related to the children not being specified correctly, or for a child to also needing to be a parent of a different flex item. The grasp on this though made it possible for a lot of the queries that I made possible.<br>
+                    <b>M</b>edia Queries are best suited at the bottom of the cascade.. Not only to help you first develop the first state of an item above so you have something to refer to, but also because the cascade works based on the last item mentioned has presidence over the ones further up. Meaning that to remove any doubts or complications, I will always put my media queries at the bottom.<br>
+                    <b>C</b>lamp makes dynamically growing text based on the size of the display.. It requires firstly the smallest size font you want.. Ideally the one you want on a cellphone or small device. Then the ideal size in the value of the view width "vw". And lastly the most upper size that the text could expand to. <br>
+                    <b>I</b> also learned a lot about dynamic websites and the mobile first philosophy. Which suggests that websites are made first for the smallest devices and then expaned for the use of a desktop experience. "An example of a website that didn't use a mobile first approach is ThreeNow nz. If you require to Sign-up on their website on a mobile you have to actually zoom out in order to see all the available buttons- Including the forgot password button." <br>
+                    <br>
+                    <b>T</b>he time I have spent creating this github.io website has taught me invaluable lessons around the order in which to make things and how to nest files appropriately, how often to copy and paste existing code from file to file and when to know when you need to write it for yourself. <br>
+                    <b>I</b> have also learned how important it is to set your computer up in such a way to improve everything about your exprience... I was planning on doing this course with a single display, and an older computer at that.. A couple weeks before the course started- I second thought that take and decided to purchase a couple things. One being a new mac mini. The other getting a hold of a second screen. <br>
+                    <b>T</b>he second screen has been a life-saver for me. Having multiple tabs of code open and a browser window for me to see the active website I am building.. <br>
+                    <b>T</b>he mac has a few built in features that felt like a hindrance at first. But now I have learned to make the most of the shortcuts application which I have set up to do specific tasks for me. Like starting and stopping a timer with the click of a couple keys on my keyboard. Opening my terminal with a couple keys on my keyboard... I am getting more familiar with VS code and the terminal. And I'm getting really excited with the time I have spent with CSS.<br>
+                    <b>I</b> am really looking forward to the next portion of the course!!<br>
+                    <br><b>T</b>hanks for reading! 
+    
+                    
+    
+    
+    
+                </p>
+        </div></div>
+    </div>    
+
+        <footer class="feet">
+
+            <p class="flxitm2">2025 Limited.</p>
+        </footer>
+    </body>
+</html>
