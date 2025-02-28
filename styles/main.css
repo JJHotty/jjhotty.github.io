@@ -123,6 +123,7 @@
         margin-right:auto;
         flex-wrap:wrap;
         justify-content:space-evenly;
+        color:white;
     }
 
     .flxitms {
@@ -172,7 +173,7 @@
     .recentposts {
         float:left;
         border:3px solid black;
-        min-height:30em;
+        min-height:90vh;
         margin-top:2em;
         margin-left:1px;
         background-color:rgba(0, 0, 0, 0.195);
