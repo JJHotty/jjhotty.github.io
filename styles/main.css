@@ -194,6 +194,11 @@
 
         
     }
+
+    .blgpcs {
+        height:100%;
+        width:100%;
+    }
     
     
     @media (min-width:1600px) { /* This is the only min-width and hides the second menu until screen size changes */
@@ -270,7 +275,29 @@
             height:13em;
         }
 
+        .hide {
+            display:none;
+        }
+        
+
+        
+
     }
+
+    @media (min-width:730px) {
+        .hide2 {
+            display:none;
+        }
+    }
+
+
+
+
+
+
+
+
+
     
     @media (max-width:320px) { /* This is the last media query and shifts everything into its smallest possible state before everything breaks*/
     
