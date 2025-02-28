@@ -123,7 +123,8 @@
         margin-right:auto;
         flex-wrap:wrap;
         justify-content:space-evenly;
-        color:white;
+        color:white; 
+        
     }
 
     .flxitms {
