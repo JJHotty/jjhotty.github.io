@@ -201,13 +201,13 @@
     }
     
     
-    @media (min-width:1600px) { /* This is the only min-width and hides the second menu until screen size changes */
+    @media (min-width:1820px) { /* This is the only min-width and hides the second menu until screen size changes */
         .header2 {
             display:none;
         }
     }
     
-    @media (max-width:1600px) { /* This hides the first menu and resizes and moves all elements on the Header */
+    @media (max-width:1820px) { /* This hides the first menu and resizes and moves all elements on the Header */
         .lnk {
             display:none;
         }
@@ -229,7 +229,7 @@
         }
     }
     
-    @media (max-width:1000px) {
+    @media (max-width:1400px) {
         .flxitms {
             width:16em;
             height:16em;
@@ -241,7 +241,7 @@
 
     }
 
-    @media (max-width:730px) {  /* This is another media query. It adjusts the menu to column rather than row.  */
+    @media (max-width:1400px) {  /* This is another media query. It adjusts the menu to column rather than row.  */
        .header {
         flex-direction:column;
        }
@@ -284,7 +284,7 @@
 
     }
 
-    @media (min-width:730px) {
+    @media (min-width:1275px) {
         .hide2 {
             display:none;
         }
