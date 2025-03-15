@@ -59,25 +59,30 @@
 
     <div class="bdybox">
         <div class="flxitm">
-            <h1 class="blurbh">Flexbox and Media-Queries...</h1>
+            <h1 class="blurbh">Javascript-DOM...</h1>
                 <p class="blurbp">
-                    <b>T</b>he past few days have been hectic for me personally, but I have had the opportunity to put a bunch of hours into the github.io website. <br>
-                    <br><b>I</b>t has taken a little while to get the hang of using flexbox, media queries, and my new favourite thing in CSS "Clamp". The addition of media queries and clamps into my code has made my entire page completely dynamic and allowed me to specify the size of the text for all the viewing sizes, as well as how the layout of the page will shift as the screen shifts in size.<br>
-                    <br><b>T</b>here are a number of things that I have learned.. But here is a quick summary of the major points I'd make. <br>
-                    <b>F</b>lexbox can be nested.. It took me a little while to understand the basic principles of how flexbox works. And a lot of the issues I had with it related to the children not being specified correctly, or for a child to also needing to be a parent of a different flex item. The grasp on this though made it possible for a lot of the queries that I made possible.<br>
-                    <b>M</b>edia Queries are best suited at the bottom of the cascade.. Not only to help you first develop the first state of an item above so you have something to refer to, but also because the cascade works based on the last item mentioned has presidence over the ones further up. Meaning that to remove any doubts or complications, I will always put my media queries at the bottom.<br>
-                    <b>C</b>lamp makes dynamically growing text based on the size of the display.. It requires firstly the smallest size font you want.. Ideally the one you want on a cellphone or small device. Then the ideal size in the value of the view width "vw". And lastly the most upper size that the text could expand to. <br>
-                    <b>I</b> also learned a lot about dynamic websites and the mobile first philosophy. Which suggests that websites are made first for the smallest devices and then expaned for the use of a desktop experience. "An example of a website that didn't use a mobile first approach is ThreeNow nz. If you require to Sign-up on their website on a mobile you have to actually zoom out in order to see all the available buttons- Including the forgot password button." <br>
-                    <br>
-                    <b>T</b>he time I have spent creating this github.io website has taught me invaluable lessons around the order in which to make things and how to nest files appropriately, how often to copy and paste existing code from file to file and when to know when you need to write it for yourself. <br>
-                    <b>I</b> have also learned how important it is to set your computer up in such a way to improve everything about your exprience... I was planning on doing this course with a single display, and an older computer at that.. A couple weeks before the course started- I second thought that take and decided to purchase a couple things. One being a new mac mini. The other getting a hold of a second screen. <br>
-                    <b>T</b>he second screen has been a life-saver for me. Having multiple tabs of code open and a browser window for me to see the active website I am building.. <br>
-                    <b>T</b>he mac has a few built in features that felt like a hindrance at first. But now I have learned to make the most of the shortcuts application which I have set up to do specific tasks for me. Like starting and stopping a timer with the click of a couple keys on my keyboard. Opening my terminal with a couple keys on my keyboard... I am getting more familiar with VS code and the terminal. And I'm getting really excited with the time I have spent with CSS.<br>
-                    <b>I</b> am really looking forward to the next portion of the course!!<br>
-                    <br><b>T</b>hanks for reading! 
-    
-                    
-    
+                    <em><b>T</b>he DOM and Javascripts wild and wonderful relationship with CSS and HTML</em> <br><br>
+                   
+                   <b>T</b>he other day I wrote a few personal blog pages talking about the concepts that I was struggling with. And it seems that the jump from something like HTML or CSS where no logic is required, to Javascript where it's purely LOGIC - It's a big jump. So first of all. Don't stress out when things don't make sense. Things will take time to sink in, and your dreams may start to reflect the fact that you're mind is working through the concepts and breaking them down into the pieces that you do understand. <br><br>
+                   <b>J</b>avascript has a really unique relationship to HTML and CSS. HTML appears as a skeleton and is simply made of the same material all over... It looks complicated only at first glance.. The parts that look complicated are it's rib cage, or maybe the neck. <br>
+                   <b>C</b>SS is the clothing of the Skeleton. It's the hat on the head, or the scarf around the neck. It's also the color of each of those items and the exact alignment they have.. such as the hat on the head could be forwards, backwards or even upside down. And the scarf could be aligned centrally around the neck or could be wrapped from the left end or the right. <br>
+                   <b>Javascript</b> Is different! It's all the tendons, muscles, organs, and skin. It's the living part. The part linked together through a maze of seemingly small attachments and linked in ways that are often hard to see. Javascript isn't HTML nor CSS- And it has very few similarities. The way it is written and it's function lend it to being completely different. But somehow so incredibly interlinked with HTML and CSS through the DOM.. 
+                   <br><b>Y</b>ou could think of the DOM as being a separate function of CSS HTML and Javascript. But in reality it's the central point at which they all collide. Each connects through the DOM; which stands as the key component for allowing Javascript to manipulate the way the scarf is situated using it's muslces, and moving the skeleton around the same. 
+                   
+                   <br>
+                   
+                   <b>O</b>f course. Every analogy is a bad fit. No one could truly explain in a single blog post all the ways they all tie together. But using the Body to explain it's intricacy I think is a fitting attempt. 
+                  <br>
+                  <br>
+                  <b>I</b>n more detail. The DOM is a Document that get's generated by the code which makes up the website. HTML CSS etc. The unique thing about this document is that it originally represents what the HTML and CSS files display, but it can be manipulated using javascript. The method in which javascript changes the layout of an element on a page, or serves a darkmode when a button is pushed; is by DOM properties. These are pre-written objects that allow you to link to various parts of a webpage, different classes and Id's, and give access to various ways to manipulate the way things work. <br>
+                  <!--Explain Control Flow and loops.--> <br>
+                  <b>C</b>ontrol flow is the order in which the computer executes code. It's the order in which the computer reads the code and executes it. It's like a recipe. You have to follow the steps in order, or the cake won't come out right. And similarly to HTML and CSS- Javascript is read top to bottom.. But unique to Javascript is that Functions is that they aren't bound to the same restrictions within the flow. A function could be called anywhere within the code. <br>
+                  <b>L</b>oops are a way of repeating a process. They are a way of telling the computer to do something over and over again. Just like you could write a single line of code to make a new number and print it out, you could also write a loop to make a new number and print it out 100 times.. Loops are also really useful for reading through an array/object and doing something to each item in the array/object. <br>
+<br>            Objects are a container that can store information. They have a key- which serves as a label for the information they store. You could have an object named Joshua. And it could have a key called age: which would state 27. And maybe a key called skills: which would state piano playing.  <br><br>
+<b>A</b>rrays are a little different to objects. They don't require a key, rather they are called using the index number. The first item in an array is index 0. The second is index 1. And so on.. This makes arrays the best for using loops. As loops natively use index numbers to call items. <br>
+<b>F</b>unctions are a way of storing code. A working snippet of code that can be called anywhere within the form. They could be as small as testing what value something has, or as complex as calculating large amounts of data.. The cool things is that once a function is written, it can be called anywhere within the code as many times as wanted.<br><br>
+
+
     
     
                 </p>

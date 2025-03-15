@@ -47,7 +47,7 @@
         background-color:rgba(0, 0, 0, 0.619);
     }
     
-    .mnubox {       /* This is menubox. It's the parent to all the link items */
+    .mnubox {       /* This is Homebox. It's the parent to all the link items */
         display:flex;
         justify-content:space-evenly;
     }
@@ -86,11 +86,11 @@
         padding:0.5em 1em 0.5em 1em;
     }
     
-    .lnk2:hover { /* Change color of menu buttons on hover */
+    .lnk2:hover { /* Change color of Home buttons on hover */
         background-color:rgb(40, 108, 139);
     }
     
-    .lnk:hover {    /* Change color of menu buttons on hover */
+    .lnk:hover {    /* Change color of Home buttons on hover */
         background-color:rgb(40, 108, 139);
     }
     
@@ -199,15 +199,22 @@
         height:100%;
         width:100%;
     }
+
+   
+
     
+
+
+
+
     
-    @media (min-width:1820px) { /* This is the only min-width and hides the second menu until screen size changes */
+    @media (min-width:1820px) { /* This is the only min-width and hides the second Home until screen size changes */
         .header2 {
             display:none;
         }
     }
     
-    @media (max-width:1820px) { /* This hides the first menu and resizes and moves all elements on the Header */
+    @media (max-width:1820px) { /* This hides the first Home and resizes and moves all elements on the Header */
         .lnk {
             display:none;
         }
@@ -241,7 +248,7 @@
 
     }
 
-    @media (max-width:1400px) {  /* This is another media query. It adjusts the menu to column rather than row.  */
+    @media (max-width:1400px) {  /* This is another media query. It adjusts the Home to column rather than row.  */
        .header {
         flex-direction:column;
        }
@@ -278,6 +285,10 @@
         .hide {
             display:none;
         }
+
+        .gridbox {
+            grid-template-columns: repeat(1, 1fr);
+        }
         
 
         
@@ -295,7 +306,11 @@
 
 
 
-
+@media (max-width:600px) {
+    .gridbox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
     
@@ -315,6 +330,9 @@
     
     .lnk2 {
         margin-left:0;
+    }
+    .gridbox {
+        grid-template-columns: repeat(1, 1fr);
     }
     
     }
